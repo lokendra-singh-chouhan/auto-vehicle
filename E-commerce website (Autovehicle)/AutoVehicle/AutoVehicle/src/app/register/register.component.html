@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<div>
+    <h1>Registration Form</h1>
+    <form [formGroup]="register" (ngSubmit)="onSubmit()">
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>User Name</mat-label>
+                <input matInput type="text" id="userName" formControlName="userName">
+
+                <span *ngIf="register.get('userName')?.invalid &&(register.get('usertName')?.dirty || register.get('userName')?.touched)">
+                <span *ngIf="register.get('userName')?.errors?.['required']">FirstName is Required</span>
+                </span>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Enter your email</mat-label>
+                <input matInput type="text" placeholder="pat@example.com" formControlName="emailId" id="emailId">
+                <span *ngIf="register.get('emailId')?.invalid &&(register.get('emailId')?.dirty || register.get('emailId')?.touched)">
+                <span *ngIf="register.get('emailId')?.errors?.['required']">EmailId is Required</span>
+                <span *ngIf="register.get('emailId')?.errors?.['pattern']">Enter Valid email</span>
+                </span>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" id="password" formControlName="password">
+                <span *ngIf="register.get('password')?.invalid &&(register.get('password')?.dirty || register.get('password')?.touched)">
+                <span *ngIf="register.get('password')?.errors?.['required']">Password is Required</span>
+                <span *ngIf="register.get('password')?.errors?.['minlength']">password Should have minimum 8
+                    characters</span>
+                </span>
+            </mat-form-field>
+
+        </div>
+
+        <div>
+            <button mat-raised-button color="warn" type="reset">Reset</button>
+
+            <button mat-raised-button color="primary" type="submit" (click)="onSubmit()" [disabled]="register.invalid">Submit</button>
+
+        </div>
+    </form>
+
+</div>

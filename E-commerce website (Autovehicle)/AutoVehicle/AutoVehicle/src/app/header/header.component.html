@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>Auto Vehicle</span>
+        <span class="example-spacer"></span>
+
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="home" routerLink="/vehicle"></mat-icon>
+
+        <!-- <button mat-icon-button [matMenuTriggerFor]="iconMenu">
+              <mat-icon class="menu-icon">more_vert</mat-icon>
+            </button> -->
+        <!-- <div class="button-container">
+
+            <mat-menu #iconMenu="matMenu">
+                <button mat-menu-item>
+                <mat-icon class="settings-icon" routerLink="/first">admin_panel_settings </mat-icon>Admin
+              </button>
+                <button mat-menu-item>
+                <mat-icon class="login-icon" routerLink="/login">person</mat-icon>
+              </button>
+            </mat-menu> -->
+        <!-- </div> -->
+        <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button> -->
+        <!-- <mat-menu #menu="matMenu"> -->
+          <!-- <button routerLink="/login" mat-fab color="warn" aria-label="Example icon button with a home icon">
+            <mat-icon>User</mat-icon> -->
+          	<mat-icon  class="nahi"  routerLink="/login"   *ngIf="loginguard()">verified_user</mat-icon>
+           <!-- <mat-icon  routerLink="/login">   verified_user  </mat-icon>  -->
+          <!-- <button routerLink="/first" mat-fab color="warn" aria-label="Example icon button with a home icon">
+            <mat-icon>admin</mat-icon>
+          </button> -->
+
+          <mat-icon  routerLink="/first"  >admin_panel_settings</mat-icon>
+          <mat-icon  routerLink="/login"  (click)="logoutis()" >logout</mat-icon>
+            <!-- <button mat-menu-item routerLink="/login">User</button>
+            <button mat-menu-item routerLink="/first">Admin</button> -->
+        <!-- </mat-menu> -->
+
+    </mat-toolbar-row>
+</mat-toolbar>

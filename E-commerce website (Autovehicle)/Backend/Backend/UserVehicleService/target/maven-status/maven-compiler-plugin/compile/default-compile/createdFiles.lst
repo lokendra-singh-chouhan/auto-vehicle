@@ -1,0 +1,17 @@
+com\example\UserVehicleService\domain\Vehicle.class
+com\example\UserVehicleService\exception\UserNotFoundExistException.class
+com\example\UserVehicleService\exception\VehicleAlreadyExistException.class
+com\example\UserVehicleService\repository\VehicleRepository.class
+com\example\UserVehicleService\exception\VehicleNotFoundExistException.class
+com\example\UserVehicleService\service\VehicleService.class
+com\example\UserVehicleService\service\IVehicleService.class
+com\example\UserVehicleService\service\UserService.class
+com\example\UserVehicleService\filter\JwtFilter.class
+com\example\UserVehicleService\exception\UserAlreadyExistException.class
+com\example\UserVehicleService\controller\UserController.class
+com\example\UserVehicleService\controller\VehicleController.class
+com\example\UserVehicleService\proxy\UserProxy.class
+com\example\UserVehicleService\domain\User.class
+com\example\UserVehicleService\service\IUserService.class
+com\example\UserVehicleService\repository\UserRepository.class
+com\example\UserVehicleService\UserVehicleServiceApplication.class

@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Auto Vehicle</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="fullBlock">
+
+    <div>
+        <p>If You are Admin than Enter your Code Number</p>
+        <mat-form-field class="example-full-width">
+            <mat-label>Enter Code</mat-label>
+            <input matInput name="adminCode" required [(ngModel)]="adminCode" placeholder="Admin Code">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="checkCode()">Submit</button>
+    </div>
+
+    <div>
+        <a routerLink="/login">
+            <p>If You are User than check here.</p>
+        </a>
+    </div>
+
+</div>

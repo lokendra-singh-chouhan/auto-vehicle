@@ -1,0 +1,60 @@
+* {
+
+    width: 100;
+}
+
+.imgcart {
+    width: 200px;
+
+}
+
+.imgflex {
+    display: flex;
+    gap: 180px;
+}
+
+.apx {
+    background-color: gray;
+}
+
+.upd {
+    width: fit-content;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.bt {
+    width: fit-content;
+}
+
+.top {
+    margin-top: 40px;
+}
+
+.dlt {
+    margin-top: 20px;
+    margin-right: 30px;
+
+
+
+
+}
+
+.namep {
+    display: flex;
+    gap: 160px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.khi {
+    margin-left: 380px;
+
+}
+
+.pap {
+
+
+    text-align: center;
+}

@@ -1,0 +1,85 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+span {
+    font-family: fantasy;
+}
+
+.example-icon {
+    padding: 0 14px;
+}
+
+
+/* Center the dropdown button
+button[mat-icon-button][matMenuTriggerFor] {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Make the dropdown button larger */
+
+
+/* button[mat-icon-button][matMenuTriggerFor] .mat-icon {
+    font-size: 24px;
+} */
+
+
+/* Change the color of the dropdown button */
+
+
+/* button[mat-icon-button][matMenuTriggerFor] {
+    background-color: #1976d2;
+    color: #fff;
+} */
+
+
+/* Change the color of the dropdown menu */
+
+
+/* .mat-menu-panel {
+    background-color: #1976d2;
+    color: #fff;
+} */
+
+
+/* Change the color of the dropdown menu items */
+
+
+/* button[mat-menu-item] {
+    color: #fff;
+} */
+
+
+/* Add padding to the dropdown menu items */
+
+
+/* button[mat-menu-item] .mat-icon {
+    margin-right: 8px;
+} */
+
+
+/* button[mat-menu-item] {
+    padding: 8px 16px;
+} */
+
+.menu-icon,
+.settings-icon,
+.login-icon {
+    font-size: 24px;
+    color: #333;
+}
+
+.menu-icon:hover,
+.settings-icon:hover,
+.login-icon:hover {
+    color: #ccc;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.nahi{
+    padding-right: 20px;
+}

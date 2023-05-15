@@ -1,0 +1,181 @@
+<app-header></app-header>
+
+<!-- <mat-toolbar color="primary">
+
+ <mat-toolbar-row>
+    <span>Admin</span>
+    <span class="example-spacer"></span>
+
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" routerLink=""></mat-icon>
+  </mat-toolbar-row> -->
+
+<!-- </mat-toolbar> -->
+
+
+
+
+<mat-accordion>
+  <!-- <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        This is the expansion title
+      </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the content
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+  </mat-expansion-panel> -->
+
+<!-- 
+  (opened)="panelOpenState = true"
+  (closed)="panelOpenState = false"  -->
+  <mat-expansion-panel > <mat-expansion-panel-header>
+      <mat-panel-title>
+       Add vehicle
+      </mat-panel-title>
+      <!-- <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description> -->
+    </mat-expansion-panel-header>
+    <form [formGroup]="addForm" (ngSubmit)="onAdd()">
+
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Vehicle Name</mat-label>
+        <input matInput type="text" formControlName="vehicleName">
+        <mat-error *ngIf="addForm.get('vehicleName')?.hasError('required')">
+          vehicleName is required
+        </mat-error>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Vehicle Category</mat-label>
+        <input matInput type="text" formControlName="vehicleCategory">
+        <mat-error *ngIf="addForm.get('vehicleCategory')?.hasError('required')">
+          vehicleCategory is required
+        </mat-error>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">Add</button>
+  
+    </form>
+  </mat-expansion-panel>
+</mat-accordion>
+
+
+
+<mat-accordion>
+  <!-- <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        This is the expansion title
+      </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the content
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+  </mat-expansion-panel> -->
+
+<!-- 
+  (opened)="panelOpenState = true"
+  (closed)="panelOpenState = false"  -->
+  <mat-expansion-panel > <mat-expansion-panel-header>
+      <mat-panel-title>
+      update vehicle
+      </mat-panel-title>
+      <!-- <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description> -->
+    </mat-expansion-panel-header>
+
+    <form [formGroup]="updateForm" (ngSubmit)="onUpdate()">
+
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Vehicle ID</mat-label>
+        <input matInput type="text"  formControlName="vehicleId">
+        <mat-error *ngIf="updateForm.get('vehicleId')?.hasError('required')">
+          vehicleId is required
+        </mat-error>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Vehicle Name</mat-label>
+        <input matInput type="text" formControlName="vehicleName">
+        <mat-error *ngIf="updateForm.get('vehicleName')?.hasError('required')">
+          vehicleName is required
+        </mat-error>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Vehicle Category</mat-label>
+        <input matInput type="text" formControlName="vehicleCategory">
+        <mat-error *ngIf="updateForm.get('vehicleCategory')?.hasError('required')">
+          vehicleCategory is required
+        </mat-error>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">Update</button>
+  
+    </form>
+
+  </mat-expansion-panel>
+</mat-accordion>
+
+
+
+
+
+
+<!-- 
+<div class="updateVehicle">
+  <hr>
+  <p>For Update Vehicle </p>
+  <hr>
+
+  <form [formGroup]="updateForm" (ngSubmit)="onUpdate()">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Vehicle ID</mat-label>
+      <input matInput type="text"  formControlName="vehicleId">
+      <mat-error *ngIf="updateForm.get('vehicleId')?.hasError('required')">
+        vehicleId is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Vehicle Name</mat-label>
+      <input matInput type="text" formControlName="vehicleName">
+      <mat-error *ngIf="updateForm.get('vehicleName')?.hasError('required')">
+        vehicleName is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Vehicle Category</mat-label>
+      <input matInput type="text" formControlName="vehicleCategory">
+      <mat-error *ngIf="updateForm.get('vehicleCategory')?.hasError('required')">
+        vehicleCategory is required
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Update</button>
+
+  </form>
+
+</div> -->
+  <app-adminc></app-adminc>
+
+  
+  
+  
+  
+
+   
+    
+ 
+
+
+
+
+

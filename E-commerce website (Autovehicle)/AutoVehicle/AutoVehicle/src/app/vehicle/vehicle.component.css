@@ -1,0 +1,89 @@
+        /* .example-card {
+    max-width: 400px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+} */
+        /* Styles for the header */
+        
+        app-header {
+            background-color: #1976d2;
+            color: #fff;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Styles for the card */
+        
+        .example-card {
+            width: 400px;
+            /* width: 400px;
+            margin: 16px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 0px 30px 0px 30px; */
+            margin-top: 40px;
+        }
+        /* Styles for the card title */
+        
+        mat-card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        /* Styles for the card image */
+        
+        mat-card-image {
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 8px;
+        }
+        /* Styles for the card content */
+        
+        mat-card-content {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        /* Styles for the card actions */
+        
+        mat-card-actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 8px;
+        }
+        /* Styles for the "Save to Cart" button */
+        
+        button[color="primary"] {
+            background-color: #1976d2;
+            color: #fff;
+            margin-left: 8px;
+        }
+        /* Styles for the "Go to Cart" button */
+        
+        button[type="submit"] {
+            background-color: red;
+            color: #fff;
+            margin-left: 600px;
+            text-decoration: none;
+            font-size: 40px;
+            line-height: 1.5;
+            margin-top: 40px;
+        }
+        
+        .apx {
+            background-image: url(../../assets/vehicles/Bcakground.jpg);
+            /* height: fit-content; */
+            /* width: 1498px; */
+            width: 100%;
+            /* margin-top: -10px; */
+        }
+        
+        .apxx {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }

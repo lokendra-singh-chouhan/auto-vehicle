@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<div class="namep">
+    <p class="khi">vehicleId</p>
+    <p>vehicleName</p>
+    <p>vehicleCategory</p>
+</div>
+
+<div class="apx">
+
+
+    <div *ngFor="let cartItem of cartList">
+        <section class="imgflex">
+            <img class="imgcart" mat-card-image src="../../assets/vehicles/vehicleImage.jpeg"
+                alt="Photo of a Shiba Inu">
+
+            <h2 class="top">{{cartItem.vehicleId}}</h2>
+            <h2 class="top">{{cartItem.vehicleName}}</h2>
+            <h2 class="top">{{cartItem.vehicleCategory}}</h2>
+
+            <div class="example-button-container">
+                <button class="dlt" mat-fab color="warn" (click)="deleteItem(cartItem.vehicleId)"
+                    aria-label="Example icon button with a delete icon">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+
+        </section>
+    </div>
+</div>
